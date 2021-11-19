@@ -97,7 +97,7 @@ router.patch("/brandsNameUpdate",authenticate,async(req,res)=>{
 });
 
 router.get("/logout",(req,res)=>{
-       console.log("hyjuggh");
+       //console.log("hyjuggh");
        res.clearCookie("jwtt",{path:'/'});
        res.status(200).send("user logout");
 });
